@@ -1,0 +1,10 @@
+body {
+  font-family: 'Bungee Shade', cursive;
+  text-align: center;
+  background: url("../images/forest-background.jpg");
+}
+
+.title {
+  font-size: 3em;
+  color: white;
+}
