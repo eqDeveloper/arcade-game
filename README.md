@@ -11,5 +11,6 @@ You can play the game one of two ways:
 * 2 - Clone repository and run index.html on your http://localhost:8000/ server.
 
 
+Objective:
 
-Thank you for visiting. 
+Get the player to the water without being hit by a bug using the Left, Right, Up and Down buttons on your keyboard.
