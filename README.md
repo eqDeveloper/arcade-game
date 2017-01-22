@@ -13,4 +13,4 @@ This is my 4th Udacity project. A JavaScript arcade game based on the original F
 
 ### Objective:
 
-Get the player to the water without being hit by a bug using the Left, Right, Up and Down buttons on your keyboard.
+Get the player to the water without being hit by a bug using the **Left**, **Right**, **Up** and **Down** buttons on your keyboard.
