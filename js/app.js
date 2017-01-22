@@ -119,7 +119,7 @@ document.addEventListener('keyup', function(e) {
         39: 'right',
         40: 'down'
     };
-
+    //Used for event listener diognostics
     player.handleInput(allowedKeys[e.keyCode]);
     console.log('keyPressed sent by event listener: ' + allowedKeys[e.keyCode]);
     console.log("The event listener is running");
