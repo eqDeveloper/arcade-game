@@ -24,7 +24,7 @@ Enemy.prototype.update = function(dt) {
 
     this.x += this.speed * dt;
 
-    // make enemies loop to left side of canvas after reaching canvas.width
+    // make enemies loop to left side of canvas after reaching canvas width.
     if (this.x >= 505) {
         this.x = 0;
     }
@@ -38,13 +38,13 @@ Enemy.prototype.render = function() {
 
 // Now write your own player class
 var Player = function(speed) {
-        this.x = 200;
-        this.y = 380;
-        this.speed = speed;
-        this.sprite = 'images/char-boy.png';
-    };
-    // This Player class requires an update(), render() and
-    // a handleInput() method.
+    this.x = 200;
+    this.y = 380;
+    this.speed = speed;
+    this.sprite = 'images/char-boy.png';
+};
+// This Player class requires an update(), render() and
+// a handleInput() method.
 Player.prototype.update = function() {
 
 };
