@@ -1,8 +1,0 @@
-1) Create Player Class based on the sample Enemy Class provided.
-2) Fill in default player instance location info. (HINT: x? y?)
-3) Create one player instance from Player Class. (You will see the game scenes get initialized)
-4) Create multiple enemy instance from Enemy Class.
-5) Fill in default enemy instance location info.
-6) Fill in update enemy instance moving function.
-7) Create player input handle function.
-8) Create function to detect collision.
