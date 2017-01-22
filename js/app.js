@@ -1,3 +1,6 @@
+// Whole-script strict mode
+"use strict";
+
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
     // Variables applied to each of our instances go here,
@@ -28,7 +31,25 @@ Enemy.prototype.update = function(dt) {
     if (this.x >= 505) {
         this.x = 0;
     }
-    checkCollision(this);
+    this.checkCollision();
+};
+
+Enemy.prototype.checkCollision = function () {
+
+    if (player.x < this.x + 75 &&
+        player.x + 65 > this.x &&
+        player.y < this.y + 50 &&
+        60 + player.y > this.y) {
+        alert('You Lose :(');
+        console.log('Bug Hit - Start Over');
+        player.reset();
+    }
+
+    if (player.y === -20) {
+        alert('YOU WIN!!!!');
+        console.log('YOU WIN!!!');
+        player.reset();
+    }
 };
 
 // Draw the enemy on the screen, required method for game
@@ -55,48 +76,29 @@ Player.prototype.render = function() {
 };
 
 Player.prototype.reset = function() {
-    player.x = 200;
-    player.y = 380;
+    this.x = 200;
+    this.y = 380;
 };
 
 
 Player.prototype.handleInput = function(keyPressed) {
-    if (keyPressed == 'left' && player.x > 0) {
-        player.x -= player.speed;
+    if (keyPressed == 'left' && this.x > 0) {
+        this.x -= this.speed;
     }
     if (keyPressed == 'up') {
-        player.y -= player.speed - 20;
+        this.y -= this.speed - 20;
     }
-    if (keyPressed == 'right' && player.x < 400) {
-        player.x += player.speed;
+    if (keyPressed == 'right' && this.x < 400) {
+        this.x += this.speed;
     }
-    if (keyPressed == 'down' && player.y < 380) {
-        player.y += player.speed - 20;
+    if (keyPressed == 'down' && this.y < 380) {
+        this.y += this.speed - 20;
     }
     //Used for position and key pressed diognostics
     console.log('keyPress is: ' + keyPressed);
-    console.log('The player X position is: ' + player.x);
-    console.log('The player Y position is:' + player.y);
+    console.log('The player X position is: ' + this.x);
+    console.log('The player Y position is:' + this.y);
 };
-
-var checkCollision = function(enemy) {
-
-    if (player.x < enemy.x + 75 &&
-        player.x + 65 > enemy.x &&
-        player.y < enemy.y + 50 &&
-        60 + player.y > enemy.y) {
-        alert('You Lose :(');
-        console.log('Bug Hit - Start Over');
-        player.reset();
-    }
-
-    if (player.y === -20) {
-        alert('YOU WIN!!!!');
-        console.log('YOU WIN!!!');
-        player.reset();
-    }
-};
-
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
