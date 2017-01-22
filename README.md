@@ -5,10 +5,10 @@ This is my 4th Udacity project. A JavaScript arcade game based on the original F
 
 ### You can play the game one of two ways:
 
-* 1 - Play the game on your browser by going to this
+* Play the game on your browser by going to this
  [link.](https://eqdeveloper.github.io/arcade-game/.)
 
-* 2 - Clone repository and run index.html on your http://localhost:8000/ server.
+* Clone repository and run index.html on your http://localhost:8000/ server. [(link to repository)](https://github.com/eqDeveloper/arcade-game)
 
 
 ### Objective:
