@@ -1,7 +1,7 @@
 Frontend Nanodegree Arcade Game
 ===============================
 
-This is my 4th Udacity project. A JavaScript arcade game based on the original Frogger arcade game.
+Project from Udacity. A JavaScript arcade game based on the original Frogger arcade game.
 
 ### You can play the game one of two ways:
 
