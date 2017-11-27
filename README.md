@@ -9,3 +9,7 @@ You can play the game one of two ways:
  [link.](https://eqdeveloper.github.io/arcade-game/)
 
 * 2 - Clone repository and run index.html on your http://localhost:8000/ server.
+
+Objective:
+
+Get the player to the water without being hit by a bug using the Left, Right, Up and Down buttons on your keyboard.
