@@ -6,10 +6,6 @@ Project from Udacity. A JavaScript arcade game based on the original Frogger arc
 You can play the game one of two ways:
 
 * 1 - Play the game on your browser by going to this
- [link.](https://review.udacity.com/#!/projects/2696458597/rubric)
+ [link.](https://eqdeveloper.github.io/arcade-game/)
 
 * 2 - Clone repository and run index.html on your http://localhost:8000/ server.
-
-
-
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
